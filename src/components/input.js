@@ -7,7 +7,7 @@ const Label = styled.label`
 `;
 
 const StyledInput = styled.input`
-  padding: 0.5rem;
+  padding: 0.5rem 0.75rem;
   border-radius: .5rem;
   border: 1px solid #D3D3D3;
   background-color: white;
