@@ -33,7 +33,8 @@ function Input({
   type = "text",
   placeholder,
   label,
-  error
+  error,
+  ...rest
 }) {
   name ||= id;
 
@@ -45,6 +46,7 @@ function Input({
         name={name}
         type={type}
         placeholder={placeholder}
+        {...rest}
       />
       {error && <Error size="sm">{error}</Error>}
     </InputContainer>

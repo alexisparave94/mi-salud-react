@@ -1,7 +1,6 @@
 import styled from "@emotion/styled";
 import Form from "./components/form";
-import Input from "./components/input";
-import Select from "./components/input_select";
+import TableProducts from "./components/table-products";
 
 const Title = styled.h1`
   font-family: 'MONSERRAT', sans-serif;
@@ -15,8 +14,6 @@ const MainWrapper = styled.div`
   margin: auto;
 ` 
 
-
-
 function App() {
   return (
     <>
@@ -24,6 +21,7 @@ function App() {
         <Title>MY HEALTH</Title>
         <Form/>
       </MainWrapper>
+      <TableProducts/>
     </>
   );
 }

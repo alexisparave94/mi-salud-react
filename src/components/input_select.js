@@ -22,12 +22,16 @@ const SelectContainer = styled.div`
   width: 100%;
 `;
 
-export default function Select({ label }){
+export default function Select({ label, name, onChange }){
+  function selectLaboratory(e){
+    onChange(e)
+  }
+
   return (
     <SelectContainer>
       <Label>{label}</Label>
-      <StyledSelect name="laboratory">
-        <option value="" selectec>-- Select a laboratory --</option>
+      <StyledSelect name={name} onChange={selectLaboratory}>
+        <option value=" ">-- Select a laboratory --</option>
         <option value="Genfar">Genfar</option>
         <option value="GSK">GSK</option>
         <option value="Hersil">Hersil</option>
